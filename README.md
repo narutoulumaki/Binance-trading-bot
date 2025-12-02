@@ -282,11 +282,3 @@ This project uses the official `python-binance` library:
 ## License
 
 This project is created for the Internshala hiring process.
-
-## Contact
-
-For questions or issues, please contact the developer.
-
----
-
-**Happy Trading! (On Testnet! 🚀)**
