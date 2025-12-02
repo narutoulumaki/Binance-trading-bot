@@ -1,0 +1,19 @@
+# Environment variables (contains sensitive API keys)
+.env
+
+# Logs directory
+# This directory contains detailed execution logs
+*.log
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
