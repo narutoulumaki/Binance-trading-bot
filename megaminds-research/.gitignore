@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Dataset
+data/VOCdevkit/
+data/*.zip
+data/*.tar
+data/*.tar.gz
+*.jpg
+*.jpeg
+*.png
+*.JPEG
+
+# Model Checkpoints
+experiments/checkpoints/*.pt
+experiments/checkpoints/*.pth
+experiments/checkpoints/*.onnx
+*.weights
+*.pt
+*.pth
+*.onnx
+!experiments/configs/*.yaml
+
+# Logs
+experiments/logs/
+*.log
+runs/
+wandb/
+
+# Results (keep structure, ignore large files)
+results/detections/*.jpg
+results/detections/*.png
+results/*.mp4
+results/*.avi
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large files
+*.h5
+*.hdf5
+*.pb
+*.tflite
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# LaTeX
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+
+# Environment variables
+.env
+.env.local
+credentials.json
+api_keys.txt

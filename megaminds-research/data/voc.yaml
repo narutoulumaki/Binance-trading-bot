@@ -1,0 +1,44 @@
+# Pascal VOC Dataset Configuration for YOLOv7
+
+# Dataset path
+path: ./data/VOCdevkit  # dataset root dir
+
+# Train/Val/Test splits
+train: 
+  - VOC2007/ImageSets/Main/trainval.txt
+  - VOC2012/ImageSets/Main/trainval.txt
+val: VOC2007/ImageSets/Main/test.txt
+test: VOC2007/ImageSets/Main/test.txt
+
+# Number of classes
+nc: 20
+
+# Class names
+names:
+  0: aeroplane
+  1: bicycle
+  2: bird
+  3: boat
+  4: bottle
+  5: bus
+  6: car
+  7: cat
+  8: chair
+  9: cow
+  10: diningtable
+  11: dog
+  12: horse
+  13: motorbike
+  14: person
+  15: pottedplant
+  16: sheep
+  17: sofa
+  18: train
+  19: tvmonitor
+
+# Dataset statistics
+# Total images: ~21,503
+# Train images: ~16,551 (VOC2007 trainval + VOC2012 trainval)
+# Test images: ~4,952 (VOC2007 test)
+# Avg objects per image: ~2.4
+# Image size: Variable (typically 500x375 or similar)

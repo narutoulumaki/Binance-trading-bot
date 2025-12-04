@@ -1,0 +1,73 @@
+# Baseline Training Configuration
+# YOLOv7-Base (Teacher Model)
+
+# Model
+model: 'yolov7_base'
+nc: 20  # number of classes
+pretrained: false
+
+# Dataset
+data: 'data/voc.yaml'
+img_size: 640
+batch_size: 16
+workers: 4
+
+# Training
+epochs: 100
+lr0: 0.01  # initial learning rate
+lrf: 0.1  # final learning rate factor
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+
+# Optimizer
+optimizer: 'SGD'  # SGD or Adam
+
+# Scheduler
+scheduler: 'cosine'  # cosine or linear
+
+# Loss weights
+box: 0.05
+obj: 1.0
+cls: 0.5
+
+# Augmentation
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 1.0
+mixup: 0.0
+
+# Checkpointing
+save_dir: 'experiments/checkpoints/baseline'
+save_period: 10  # save every N epochs
+resume: false
+resume_path: null
+
+# Logging
+log_dir: 'experiments/logs/baseline'
+log_period: 10  # log every N iterations
+
+# Validation
+val_period: 5  # validate every N epochs
+conf_thres: 0.001
+iou_thres: 0.6
+
+# Device
+device: 'cuda'  # cuda or cpu
+seed: 42
+
+# Mixed precision
+amp: true  # automatic mixed precision
+
+# Early stopping
+patience: 30  # epochs to wait for improvement
